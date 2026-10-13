@@ -3,129 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamal Mitra | Academic Portfolio</title>
+    <title>Tamal Mitra | Academic Researcher & Lecturer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; }
-        header { background-color: #1a252f; color: white; text-align: center; padding: 40px 20px; }
-        header h1 { margin: 0; font-size: 2.2em; }
-        header p { margin-top: 10px; font-size: 1.1em; color: #bdc3c7; }
-        .container { max-width: 800px; margin: 30px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 30px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        a { color: #2980b9; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        .contact-info { background: #ecf0f1; padding: 15px; border-radius: 5px; margin-top: 15px; }
-        .experience-item { margin-bottom: 20px; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
 
-    <header>
-        <h1>Tamal Mitra</h1>
-        <p>Academic Researcher & Lecturer</p>
+    <!-- Header / Hero Section -->
+    <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-50 shadow-md">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-xl font-bold tracking-tight">Tamal Mitra</h1>
+                <p class="text-xs text-blue-400 font-medium">Academic Researcher & Lecturer | MD, Tapati Mitra Research Kft</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="mailto:mitraindia26@gmail.com" class="text-xs bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition shadow-sm">
+                    ✉️ Contact Me
+                </a>
+                <a href="#cv-section" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-4 py-2 rounded-lg transition">
+                    📄 Download CV
+                </a>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Welcome to my academic portfolio. I am dedicated to higher education teaching and active research. My primary academic interests focus on advanced instruction, methodology, and ongoing scholarly research.</p>
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
 
-        <div class="contact-info">
-            <strong>Contact & Profiles:</strong><br>
-            Email: <a href="mailto:mitraindia26@gmail.com">mitraindia26@gmail.com</a><br>
-            GitHub: <a href="https://github.com/Tamal-Mitra" target="_blank">github.com/Tamal-Mitra</a>
-        </div>
+        <!-- About Me Section -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+            <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <span class="text-blue-600">👋</span> About Me
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Welcome to my academic portfolio. I am dedicated to higher education teaching, international institutional collaboration, and active research in modern commerce and enterprise frameworks.
+            </p>
+            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs flex flex-col sm:flex-row justify-between gap-3 text-slate-600">
+                <div><span class="font-semibold text-slate-700">Email:</span> <a href="mailto:mitraindia26@gmail.com" class="text-blue-600 hover:underline">mitraindia26@gmail.com</a></div>
+                <div><span class="font-semibold text-slate-700">GitHub:</span> <a href="https://github.com/Tamal-Mitra" target="_blank" class="text-blue-600 hover:underline">github.com/Tamal-Mitra</a></div>
+            </div>
+        </section>
 
-        <h2>Research & Interests</h2>
-        <ul>
-            <li>Primary Subject Field & Specialization</li>
-            <li>Academic Methodology & Applied Research</li>
-        </ul>
+        <!-- Scholarly Publications -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">📚</span> Scholarly Publications
+            </h2>
+            <div class="p-5 rounded-xl bg-blue-50/50 border border-blue-100">
+                <p class="text-sm font-medium text-slate-900 mb-2">
+                    Mitra, Tamal. (2026). "Business Creation Through Residence Permits: A New Form Of Opportunity Entrepreneurship In Europe." 
+                    <span class="italic text-slate-700">Advances in Consumer Research</span>, Vol. 3, Issue 3, pp. 419–429.
+                </p>
+                <div class="flex items-center justify-between flex-wrap gap-3 mt-4">
+                    <span class="text-[11px] bg-blue-100 text-blue-800 px-2.5 py-1 rounded-full font-medium">Indexed in EBSCO & Google Scholar</span>
+                    <a href="#" target="_blank" class="text-xs bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-sm">
+                        📄 View Full Paper (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <h2>Scholarly Publications</h2>
-        <ul>
-            <li>
-                <strong>Mitra, Tamal. (2026).</strong> "Business Creation Through Residence Permits: A New Form Of Opportunity Entrepreneurship In Europe." 
-                <em>Advances in Consumer Research</em>, Vol. 3, Issue 3, pp. 419–429. 
-                <br>
-                👉 <a href="Business_Creation_through_Residence_Permits.pdf" target="_blank">View Full Paper (PDF)</a> | <small>Indexed in EBSCO & Google Scholar</small>
-            </li>
-        </ul>
-
-        <h2>Projects & International Collaborations</h2>
-        <ul>
-            <li>
-                <strong>Strategic MoU between Tapati Mitra Research Kft (Hungary) & Mirmadan Mohanlal Government Polytechnic (India)</strong> *(March 2026)*[cite: 2]
-                <ul>
-                    <li><strong>Role:</strong> Managing Director (TMREU) / Academic Collaborator</li>
-                    <li><strong>Scope of Collaboration:</strong> Established an official international cross-border partnership connecting European research standards with West Bengal's state technical education framework[cite: 2, 4].</li>
-                    <li><strong>Key Initiatives:</strong> 
-                        <ul>
-                            <li>Launched a free 20-hour "Career Skills" training program covering interpersonal communication, professional presentations, and laboratory/production floor insights[cite: 3].</li>
-                            <li>Facilitated AICTE-aligned student internships, curriculum design optimization, and faculty development programs (FDP)[cite: 4, 5].</li>
-                        </ul>
-                    </li>
-                    <li><strong>Document Proof:</strong> 👉 <a href="tmreu-mmgp-mou-2026.pdf" target="_blank">View Official MoU Document (PDF)</a></li>
+        <!-- Projects & International Collaborations -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">🌐</span> Projects & International Collaborations
+            </h2>
+            <div class="border-l-4 border-blue-600 pl-4 space-y-3">
+                <h3 class="text-sm font-bold text-slate-900">Strategic MoU between Tapati Mitra Research Kft (Hungary) & Mirmadan Mohanlal Government Polytechnic (India)</h3>
+                <p class="text-xs text-slate-600"><span class="font-semibold text-slate-700">Role:</span> Managing Director (TMREU) / Academic Collaborator</p>
+                <p class="text-xs text-slate-600 leading-relaxed">Established an official international cross-border partnership connecting European research standards with West Bengal's state technical education framework.</p>
+                <ul class="text-xs text-slate-600 list-disc list-inside space-y-1 pt-1">
+                    <li>Launched a free 20-hour "Career Skills" training program covering interpersonal communication and professional presentations.</li>
+                    <li>Facilitated AICTE-aligned student internships, curriculum design optimization, and faculty development programs (FDP).</li>
                 </ul>
-            </li>
-        </ul>
+                <div class="pt-2">
+                    <a href="#" target="_blank" class="text-xs text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center gap-1">
+                        🔗 View Official MoU Document (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <h2>Executive & Corporate Leadership Experience</h2>
-        
-        <div class="experience-item">
-            <h3>Managing Director & Founder</h3>
-            <p><strong>TAPATI MITRA RESEARCH Kft.</strong> — Budapest, Hungary (2022 – Present)</p>
-            <ul>
-                <li>📑 <a href="Tapati_Mitra_Research_Kft_Founding_Deed.pdf" target="_blank">Founding Deed / Articles of Association — Tapati Mitra Research Kft. (PDF)</a></li>
-                <li>📑 <a href="Tapati_Mitra_Research_Kft_Signature_Sample.pdf" target="_blank">Official Signature Sample & Attorney Countersignature — Tapati Mitra Research Kft. (PDF)</a></li>
+        <!-- Executive & Corporate Leadership Experience -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">🏢</span> Executive & Corporate Leadership Experience
+            </h2>
+            <div class="space-y-6 text-xs">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm">Managing Director & Founder</h3>
+                    <p class="text-blue-600 font-medium mb-2">TAPATI MITRA RESEARCH Kft. — Budapest, Hungary (2022 – Present)</p>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium transition inline-flex items-center gap-1">📜 Founding Deed / Articles of Association (PDF)</a>
+                        <a href="#" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium transition inline-flex items-center gap-1">✍️ Official Signature Sample & Attorney Countersignature (PDF)</a>
+                    </div>
+                </div>
+                <div class="border-t border-slate-100 pt-4">
+                    <h3 class="font-bold text-slate-900 text-sm">Company Director & Founder (Person with Significant Control)</h3>
+                    <p class="text-blue-600 font-medium mb-2">S WORK TECHNOLOGIES UK LIMITED — Greater Manchester, United Kingdom (2021)</p>
+                    <a href="#" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium transition inline-flex items-center gap-1">📄 Official Certificate of Incorporation & Memorandum of Association (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Experience -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">🎓</span> Teaching Experience
+            </h2>
+            <div class="space-y-4 text-xs">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm">Academic Consultant & Research Advisor</h3>
+                    <p class="text-slate-500 mb-1">District Institute of Education and Training (DIET), Keshav Puram (SCERT, Govt. of NCT of Delhi)</p>
+                    <a href="#" class="text-blue-600 hover:underline font-medium">📄 View Official Verification & LOR by Principal Dr. Nandita Deb (PDF)</a>
+                </div>
+                <div class="border-t border-slate-100 pt-3">
+                    <h3 class="font-bold text-slate-900 text-sm">Senior Visiting Lecturer / Assistant Visiting Professor</h3>
+                    <p class="text-slate-500 mb-1">Venkata Rathna College of Education (VRCE), Kurnool (2017–2025)</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#" class="text-blue-600 hover:underline font-medium">📄 View Official Experience Certificate (PDF)</a>
+                        <a href="#" class="text-blue-600 hover:underline font-medium">📄 View LOR by Principal (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Vitae & Academic Documents -->
+        <section id="cv-section" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">📑</span> Curriculum Vitae & Academic Documents
+            </h2>
+            <div class="mb-6">
+                <a href="#" class="inline-block bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-5 py-2.5 rounded-xl transition shadow-sm">
+                    📥 Click Here to Download / View My CV (PDF)
+                </a>
+            </div>
+            <h3 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">Certificates & Transcripts</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                <a href="#" class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-100 text-slate-700 font-medium transition flex items-center gap-2">🎓 Master of Commerce Transcript (PDF)</a>
+                <a href="#" class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-100 text-slate-700 font-medium transition flex items-center gap-2">📜 Medium of Instruction Certificate (PDF)</a>
+                <a href="#" class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-100 text-slate-700 font-medium transition flex items-center gap-2">🎓 Master of Commerce Certificate (PDF)</a>
+                <a href="#" class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-100 text-slate-700 font-medium transition flex items-center gap-2">🌐 International Exchange Program (University of Warsaw) Transcript</a>
+            </div>
+        </section>
+
+        <!-- Letters of Recommendation -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">⭐</span> Letters of Recommendation
+            </h2>
+            <ul class="space-y-3 text-xs text-slate-700">
+                <li>
+                    📄 <a href="#" class="text-blue-600 font-medium hover:underline">Official Letter of Recommendation (LOR) – SCERT Delhi / DIET Keshav Puram</a> <span class="text-slate-400">(Issued by Dr. Nandita Deb, Principal)</span>
+                </li>
+                <li>
+                    📄 <a href="#" class="text-blue-600 font-medium hover:underline">Official Letter of Recommendation (LOR) – Venkata Rathna College of Education (VRCE)</a> <span class="text-slate-400">(Issued by Principal, VRCE Kurnool)</span>
+                </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="experience-item">
-            <h3>Company Director & Founder (Person with Significant Control)</h3>
-            <p><strong>S WORK TECHNOLOGIES UK LIMITED</strong> — Greater Manchester, United Kingdom (2021)</p>
-            <ul>
-                <li>📑 <a href="Official%20Certificate%20of%20Incorporation%20%26%20Memorandum%20of%20Association.pdf" target="_blank">Official Certificate of Incorporation & Memorandum of Association — S Work Technologies UK Ltd. (PDF)</a></li>
-            </ul>
-        </div>
+    </main>
 
-        <h2>Teaching Experience</h2>
-        <ul>
-            <li>
-                <strong>Academic Consultant & Research Advisor</strong> — District Institute of Education and Training (DIET), Keshav Puram (SCERT, Govt. of NCT of Delhi)
-                <br>
-                👉 <a href="LOR_Dr_Nandita_Deb_SCERT.pdf" target="_blank">View Official Verification & LOR by Principal Dr. Nandita Deb (PDF)</a>
-            </li>
-            <li>
-                <strong>Senior Visiting Lecturer / Assistant Visiting Professor</strong> — Venkata Rathna College of Education (VRCE), Kurnool (2017–2025)
-                <br>
-                👉 <a href="VRCE_Visiting_Lecturer_Experience_Certificate.pdf" target="_blank">View Official Experience Certificate (PDF)</a> | 
-                <a href="LOR_VRCE_Principal.pdf" target="_blank">View LOR by Principal (PDF)</a>
-            </li>
-        </ul>
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 py-8 text-center text-xs text-slate-400 border-t border-slate-200 mt-10">
+        © 2026 Tamal Mitra. All rights reserved. Built for European Academic & Institutional Outreach.
+    </footer>
 
-        <h2>Curriculum Vitae (CV)</h2>
-        <p>📄 <a href="MITRA%20TAMAL%20CV%20Resume.pdf" target="_blank">Click Here to Download / View My CV (PDF)</a></p>
-
-        <h2>Academic Documents & Certificates</h2>
-        <ul>
-            <li><a href="MASTER%20OF%20COMMERCE%20TRANSCRIPT.pdf" target="_blank">📥 Master of Commerce Transcript (PDF)</a></li>
-            <li><a href="MEDIUM%20OF%20INSTRUCTION%20CERTIFICATE.pdf" target="_blank">📥 Medium of Instruction Certificate (PDF)</a></li>
-            <li><a href="MASTER%20OF%20COMMERCE%20CERTIFICATE.pdf" target="_blank">📥 Master of Commerce Certificate (PDF)</a></li>
-            <li><a href="INTERNATIONAL%20EXCHANGE%20PROGRAM%20%28UNIVERSITY%20OF%20WARSAW%29%20POLAND%20TRANSCRIPT.pdf" target="_blank">📄 International Exchange Program (University of Warsaw) Transcript</a></li>
-        </ul>
-
-        <h2>Letters of Recommendation</h2>
-        <ul>
-            <li>
-                <a href="LOR_Dr_Nandita_Deb_SCERT.pdf" target="_blank">📄 Official Letter of Recommendation (LOR) – SCERT Delhi / DIET Keshav Puram</a> 
-                <em>(Issued by Dr. Nandita Deb, Principal)</em>
-            </li>
-            <li>
-                <a href="LOR_VRCE_Principal.pdf" target="_blank">📄 Official Letter of Recommendation (LOR) – Venkata Rathna College of Education (VRCE)</a> 
-                <em>(Issued by Principal, VRCE Kurnool)</em>
-            </li>
-        </ul>
-    </div>
 </body>
 </html>
